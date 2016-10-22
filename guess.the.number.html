@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный сайт студента GeekBrains</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+<script type="text/javascript">
+
+	var randomNumber1 = parseInt(Math.random()*100) + 1;
+	var userNumber1 = 0;
+	var userTry1 = 0;	
+
+	var randomNumber2 = parseInt(Math.random()*100) + 1;
+	var userNumber2 = 0;
+	var userTry2 = 0;	
+
+	while( userNumber1 != randomNumber1 )
+	{
+		userNumber1 = parseInt(prompt("Игрок 1 введите число от 1 до 100"));
+		userTry1++;
+		if ( userNumber1 > randomNumber1 )
+		{
+			alert("Игрок 1 Ваше число больше загадоного");
+		}
+
+		if ( userNumber1 < randomNumber1 )
+		{
+			alert(" Игрок 1 Ваше число меньше загадоного");
+		}
+
+		if ( userNumber1 == randomNumber1 )
+		{
+			alert("Ваше число верно! Поздравляю Вы победитель! Вы король! Вы чемпион! Ваш подвиг не забудит народ! Вы вечно будите жить в их сердцах! Всего попыток: "+userTry1);
+		}
+	}
+
+	while( userNumber2 != randomNumber2 )
+	{
+		userNumber2 = parseInt(prompt("Игрок 2 введите число от 1 до 100"));
+		userTry2++;
+		if ( userNumber2 > randomNumber2 )
+		{
+			alert("Игрок 2 Ваше число больше загадоного");
+		}
+
+		if ( userNumber2 < randomNumber2 )
+		{
+			alert(" Игрок 2 Ваше число меньше загадоного");
+		}
+
+		if ( userNumber2 == randomNumber2 )
+		{
+			alert("Ваше число верно! Поздравляю Вы победитель! Вы король! Вы чемпион! Ваш подвиг не забудит народ! Вы вечно будите жить в их сердцах! Всего попыток: "+userTry2);
+		}
+	}
+		if (userTry2 < userTry1) 
+		{
+			alert("Игрок 2 победил! Он набрал меньшее число попыток! Поздравляю Вы победитель! Вы король! Вы чемпион! Ваш подвиг не забудит народ! Вы вечно будите жить в их сердцах! А Игрок 1 проигравший. Он не заслуживает похвалы.")
+		} 
+		
+		if (userTry2 > userTry1) 
+		{
+			alert("Игрок 1 победил! Он набрал меньшее число попыток! Поздравляю Вы победитель! Вы король! Вы чемпион! Ваш подвиг не забудит народ! Вы вечно будите жить в их сердцах! А Игрок 2 проигравший. Он не заслуживает похвалы.")
+		} 
+		
+		if (userTry2 == userTry1) 
+		{
+			alert("Ничья! И увы я не могу похвалить одновременно двоих... Так что обайдётесь без похвалы! Я вас и так похвалила за отгадоное число!!!")
+		} 
+</script>
+</head>
+<body>
+
+	<div id="header">
+		<a href="index.html">Главная</a> <span>/</span>
+		<a href="game.puzzles.html">Загадки</a> <span>/</span>
+		<a href="guess.the.number.html">Угадайка</a> <span>/</span>
+	</div>
+
+	<div id="content">
+		<h1>Личный сайт студента GeekBrains</h1>
+		<div id="center">
+			
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/">GeekBrains </a>
+	</div>
+
+</body>
+</html>
